@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Live -- Agora</title>
+    <link rel="stylesheet" href="./assets/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Basic Live</a>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col text-center">
+                <button id="host-join" type="button" class="btn btn-primary">Join as host</button>
+                <button id="audience-join" type="button" class="btn btn-secondary">Join as audience</button>
+                <button id="leave" type="button" class="btn btn-danger" disabled>Leave</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <div id="local-player" class="player"></div>
+                <div id="remote-playerlist"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/jquery-3.4.1.min.js"></script>
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+    <script src="./basicLive.js"></script>
+</body>
+
+</html>
